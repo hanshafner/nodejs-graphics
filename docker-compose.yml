@@ -3,6 +3,8 @@ services:
   app:
     build:
       context: .
+    container_name: nodejs-graphics
+    restart: unless-stopped
     ports:
       - "19999:3000"
     volumes:
